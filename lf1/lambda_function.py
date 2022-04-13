@@ -6,6 +6,7 @@ import time
 def lambda_handler(event, context):
     print(event)
     #getting the photo details
+    #hello
     s3_info = event['Records'][0]['s3']
     bucket_name = s3_info['bucket']['name']
     key_name = s3_info['object']['key']
